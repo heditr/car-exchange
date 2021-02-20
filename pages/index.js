@@ -1,5 +1,10 @@
-export default () => (
+import Button from '../components/commons/Button';
+import BannerTop from "../components/BannerTop";
+
+const App = () => (
     <div>
-        <h1>My First Next.js Page</h1>
+        <BannerTop />
     </div>
 );
+
+export default App;
