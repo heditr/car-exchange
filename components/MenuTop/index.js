@@ -1,22 +1,32 @@
 import styled from "styled-components";
 import Button from "../commons/Button";
-import Link from "../commons/Link";
+import { StyledLink } from "../commons/Link";
 import Nav from "../Nav";
 
 const _MenuTop = styled.div`
   display: flex;
   flex-wrap: nowrap;
+  align-content: flex-end;
+  margin: auto;
+  flex-basis: auto;
+  justify-content: space-between;
 `;
+
+const _BtnContainer = styled.div`
+  align-content: flex-end;
+`
 
 const MenuTop = () => {
   return (
     <_MenuTop>
       <Nav>
-          <Link>Acheter</Link>
-          <Link>Conseils</Link>
-          <Link>Qui sommes nous?</Link>
+          <StyledLink>Acheter</StyledLink>
+          <StyledLink>Conseils</StyledLink>
+          <StyledLink>Qui sommes nous?</StyledLink>
       </Nav>
-      <Button width={240}>Vendre ma voiture</Button>
+      <_BtnContainer>
+        <Button width={240}>Vendre ma voiture</Button>
+      </_BtnContainer>
     </_MenuTop>
   );
 };

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Logo from "../commons/Logo";
-import Button from "../commons/Button";
 import MenuTop from "../MenuTop";
 
 const Banner = styled.div`
@@ -9,12 +8,21 @@ const Banner = styled.div`
   height: 72px;
   background: #FFFFFF;
   flex-wrap: nowrap;
+  justify-content: space-between;
+`;
+
+const _LogoContainer = styled.div`
+  display: inline-block;
+  align-content: flex-start;
+  margin: auto;
 `;
 
 const BannerTop = () => {
   return (
     <Banner>
-        <Logo alt="Car exchange" />
+        <_LogoContainer>
+          <Logo alt="Car exchange" />
+        </_LogoContainer>
         <MenuTop />
     </Banner>
   );
