@@ -7,7 +7,7 @@ const SubTitle = styled.div`
   `};
   line-height: 30px;
   font-weight: 500;
-  color: #494949;
+  color: ${(props) => props.theme.black};
   margin-left:auto;
   margin-right:auto;
   margin-top: 35px;

@@ -1,3 +1,5 @@
+import { useContext } from 'react';
+import { ThemeContext } from 'styled-components';
 import styled, { css } from 'styled-components';
 import image from '../../public/search-box-bg.png';
 import Title from '../commons/Title';
@@ -22,7 +24,7 @@ const InputContainer = styled.div`
   width: 100%;
   justify-content: flex-start;
   align-items: flex-end;
-  margin-top: 20px;
+  margin-top: 45px;
 `;
 const ContainerBox = styled.div`
   width: 92%;
@@ -38,14 +40,16 @@ const StyledSpan = styled.span`
 `;
 
 const SearchBox = () => {
+  const theme = useContext(ThemeContext);
+
   return (
     <StyledSearchBox>
       <ContainerBox>
         <Title fontSize={54}>
           <p>
             Concessionnaire en ligne spécialiste
-            <br /> de <StyledSpan color="#05668D">l'achat</StyledSpan>
-            &nbsp;et la <StyledSpan color="#00C39A">vente</StyledSpan> de voitures d'occasion
+            <br /> de <StyledSpan color={theme.blue}>l'achat</StyledSpan>
+            &nbsp;et la <StyledSpan color={theme.green}>vente</StyledSpan> de voitures d'occasion
           </p>
           <SubTitle fontSize={20}>
             <p> Trouver une petite annonce de annonce de voiture d'occasion près de chez vous ou partout en France : </p>
