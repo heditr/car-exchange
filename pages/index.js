@@ -1,9 +1,12 @@
-import Button from '../components/commons/Button';
-import BannerTop from "../components/BannerTop";
+import BannerTop from '../components/BannerTop';
+import SearchBox from '../components/SearchBox';
+import VerifiedReviews from '../components/VerifiedReviews';
 
 const App = () => (
     <div>
         <BannerTop />
+        <SearchBox />
+        <VerifiedReviews />
     </div>
 );
 

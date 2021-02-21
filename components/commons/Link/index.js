@@ -13,7 +13,7 @@ const StyledLink = styled(Link)`
   font-family: MontserratBold, serif;
   font-weight: bold;
   text-decoration: none;
-  color: #000000;
+  color: #494949;
   margin-right: 10px;
   &:link{
     text-decoration: none;

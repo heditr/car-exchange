@@ -1,8 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 import montserratLight1 from '../../public/fonts/Montserrat-Light.woff';
 import montserratLight2 from '../../public/fonts/Montserrat-Light.woff2';
-import montserratBold1 from '../../public/fonts/Montserrat-Light.woff';
-import montserratBold2 from '../../public/fonts/Montserrat-Light.woff2';
+import montserratBold1 from '../../public/fonts/Montserrat-Bold.woff';
+import montserratBold2 from '../../public/fonts/Montserrat-Bold.woff2';
 
 const MontserratLight = createGlobalStyle`
   @font-face {
