@@ -8,8 +8,6 @@ const Title = styled.div`
   line-height: 80px;
   letter-spacing: -0.03em;
   font-weight: bold;
-  margin-left:auto;
-  margin-right:auto;
 `;
 
 export default Title;
