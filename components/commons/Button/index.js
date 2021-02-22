@@ -9,10 +9,6 @@ const Button = styled.button`
   border: 0;
   cursor: pointer;
   outline: none;
-  ${({width, height}) => css`
-    width: ${width}px;
-    height: ${height}px;
-  `}
 `;
 
 export default Button;

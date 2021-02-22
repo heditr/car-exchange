@@ -4,6 +4,11 @@ import styled from "styled-components";
 
 const InputContainer = styled.div`
   position: relative;
+  flex-grow: 2;
+  flex-shrink: 4;
+  @media(max-width: 768px) {
+    width: 100%;
+  }
 `;
 const Icon = styled(SvgCreator)`
   position: absolute;

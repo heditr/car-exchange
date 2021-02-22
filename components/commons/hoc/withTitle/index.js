@@ -4,6 +4,13 @@ const InputContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-right: 20px;
+  flex-grow: 2;
+  flex-shrink: 4;
+  @media(max-width: 768px) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 `;
 
 const InputTitle = styled.span`

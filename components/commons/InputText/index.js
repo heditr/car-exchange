@@ -6,12 +6,13 @@ const InputText = styled.input`
   border: 1px solid ${(props) => props.theme.gray};
   box-sizing: border-box;
   border-radius: 6px;
-  width: 400px;
+  width: 100%;
   height: 64px;
   font-weight: bold;
   font-size: 18px;
   color: ${(props) => props.theme.black};
   padding: 24px;
+  outline: none;
   &::placeholder{
     color: ${(props) => props.theme.gray};
     font-weight: 600;
@@ -21,6 +22,9 @@ const InputText = styled.input`
   }
   &:focus{
     border: 1px solid ${(props) => props.theme.black};
+  }
+  @media(max-width: 768px) {
+    width: 100%;
   }
 `;
 

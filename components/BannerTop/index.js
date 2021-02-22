@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Logo from "../commons/Logo";
-import MenuTop from "../MenuTop";
 import HiddenCheckbox from "../commons/Checkbox";
 import Burger from "../commons/Burger";
 import SvgCreator from "../commons/SvgCreator";
@@ -31,10 +30,10 @@ const BannerTop = () => {
   return (
     <Banner>
       <Logo alt="Car exchange" />
-      <HiddenCheckbox/>
       <Burger htmlFor="burger_mr">
         <SvgCreator url={burgerIcon} width={29} height={22} />
       </Burger>
+      <HiddenCheckbox/>
       <Nav className="mr-nav-menu">
         <StyledLink>Acheter</StyledLink>
         <StyledLink>Conseils</StyledLink>
