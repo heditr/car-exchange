@@ -1,6 +1,13 @@
 import styled from "styled-components";
 import Logo from "../commons/Logo";
 import MenuTop from "../MenuTop";
+import HiddenCheckbox from "../commons/Checkbox";
+import Burger from "../commons/Burger";
+import SvgCreator from "../commons/SvgCreator";
+import burgerIcon from "../../public/burger.svg";
+import Nav from "../Nav";
+import {StyledLink} from "../commons/Link";
+import Button from "../commons/Button";
 
 const Banner = styled.div`
   display: flex;
@@ -9,21 +16,31 @@ const Banner = styled.div`
   background: #FFFFFF;
   flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: center;
 `;
 
-const _LogoContainer = styled.div`
-  display: inline-block;
-  align-content: flex-start;
-  margin: auto;
+const ButtonToEnd = styled(Button)`
+  align-content: flex-end;
+  margin: 20px;
+  @media(max-width: 768px) {
+    display: none;
+  }
 `;
 
 const BannerTop = () => {
   return (
     <Banner>
-        <_LogoContainer>
-          <Logo alt="Car exchange" />
-        </_LogoContainer>
-        <MenuTop />
+      <Logo alt="Car exchange" />
+      <HiddenCheckbox/>
+      <Burger htmlFor="burger_mr">
+        <SvgCreator url={burgerIcon} width={29} height={22} />
+      </Burger>
+      <Nav className="mr-nav-menu">
+        <StyledLink>Acheter</StyledLink>
+        <StyledLink>Conseils</StyledLink>
+        <StyledLink>Qui sommes nous?</StyledLink>
+      </Nav>
+      <ButtonToEnd width={230} height={48}>Vendre ma voiture</ButtonToEnd>
     </Banner>
   );
 };

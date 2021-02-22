@@ -13,7 +13,6 @@ const StyledSearchBox = styled.div`
   background: url('${image}') no-repeat;
   background-origin: content-box;
   background-size: cover;
-  margin-top: 20px;
   display: flex;
   justify-content: flex-end;
 `;
