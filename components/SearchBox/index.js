@@ -4,8 +4,8 @@ import styled, { css } from 'styled-components';
 import image from '../../public/search-box-bg.png';
 import Title from '../commons/Title';
 import SubTitle from '../commons/Subtitle';
-import {StyledInput} from '../commons/InputText';
 import Button from '../commons/Button';
+import {InputWithIcon, InputWithIconWithTitle, InputWithTitle} from '../commons/RichInput';
 
 const StyledSearchBox = styled.div`
   width: 100%;
@@ -32,7 +32,6 @@ const ContainerBox = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   margin: auto;
 `;
 const StyledSpan = styled.span`
@@ -56,8 +55,8 @@ const SearchBox = () => {
           </SubTitle>
         </Title>
         <InputContainer>
-          <StyledInput placeholder="Modèle" inputTitle="Quel véhicule recherchez vous ?" />
-          <StyledInput placeholder="Ex: Paris" inputTitle="Ville, département" />
+          <InputWithTitle placeholder="Modèle" inputTitle="Quel véhicule recherchez vous ?" />
+          <InputWithIconWithTitle placeholder="Ex: Paris" inputTitle="Ville, département" />
           <Button width={230} height={64}>Recherche</Button>
         </InputContainer>
       </ContainerBox>
