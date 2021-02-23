@@ -2,7 +2,9 @@ import styled from 'styled-components';
 import Title from '../commons/Title';
 import CardList from '../commons/CardList';
 import Card from '../commons/Card';
-import ArrowScroll from "../commons/ArrowScroll";
+import ArrowScroll from '../commons/ArrowScroll';
+import UserImage, {UserImageWithTitle} from '../commons/UserImage';
+import userLogo from '../../public/user1.png';
 
 const Reviews = styled.div`
   background: rgba(5, 102, 141, 0.1);
@@ -37,26 +39,31 @@ const VerifiedReviews = () => (
         <p>
           “ En déposant mon annonce sur Annonces-auto.meilleure-reprise.com j’ai pu vendre ma voiture d’occasion rapidement et sans risques “
         </p>
+        <UserImageWithTitle url={userLogo} title="Florence" subtitle="Directrice générale" />
       </Card>
       <Card>
         <p>
           “ En déposant mon annonce sur Annonces-auto.meilleure-reprise.com j’ai pu vendre ma voiture d’occasion rapidement et sans risques “
         </p>
+        <UserImageWithTitle url={userLogo} title="Florence" subtitle="Directrice générale" />
       </Card>
       <Card>
         <p>
           “ En déposant mon annonce sur Annonces-auto.meilleure-reprise.com j’ai pu vendre ma voiture d’occasion rapidement et sans risques “
         </p>
+        <UserImageWithTitle url={userLogo} title="Florence" subtitle="Directrice générale" />
       </Card>
       <Card>
         <p>
           “ En déposant mon annonce sur Annonces-auto.meilleure-reprise.com j’ai pu vendre ma voiture d’occasion rapidement et sans risques “
         </p>
+        <UserImageWithTitle url={userLogo} title="Florence" subtitle="Directrice générale" />
       </Card>
       <Card>
         <p>
           “ En déposant mon annonce sur Annonces-auto.meilleure-reprise.com j’ai pu vendre ma voiture d’occasion rapidement et sans risques “
         </p>
+        <UserImageWithTitle url={userLogo} title="Florence" subtitle="Directrice générale" />
       </Card>
     </CardList>
   </Reviews>
