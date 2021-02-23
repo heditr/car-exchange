@@ -16,6 +16,7 @@ const Card = styled.li`
   color: #353535;
   padding: 25px 32px 0;
   flex-shrink: 0;
+  cursor: move;
   @media(max-width: 768px) {
     width: 213px;
     height: 166px;
